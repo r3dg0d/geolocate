@@ -1,4 +1,4 @@
-pkgbase = geolocate
+pkgbase = geolocate-rs
 	pkgdesc = A simple, fast command-line tool for geolocating IP addresses and domain names
 	pkgver = 0.1.0
 	pkgrel = 1
@@ -8,7 +8,7 @@ pkgbase = geolocate
 	makedepends = cargo
 	makedepends = git
 	depends = gcc-libs
-	source = geolocate::git+https://github.com/r3dg0d/geolocate.git
+	source = geolocate-rs::git+https://github.com/r3dg0d/geolocate.git
 	sha256sums = SKIP
 
-pkgname = geolocate
+pkgname = geolocate-rs

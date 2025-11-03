@@ -1,4 +1,4 @@
-# geolocate
+# geolocate-rs
 
 A simple, fast command-line tool for geolocating IP addresses and domain names written in Rust.
 
@@ -19,14 +19,14 @@ Install using your favorite AUR helper:
 
 ```bash
 # Using yay
-yay -S geolocate
+yay -S geolocate-rs
 
 # Using paru
-paru -S geolocate
+paru -S geolocate-rs
 
 # Or manually
-git clone https://aur.archlinux.org/geolocate.git
-cd geolocate
+git clone https://aur.archlinux.org/geolocate-rs.git
+cd geolocate-rs
 makepkg -si
 ```
 
@@ -64,20 +64,20 @@ Check the [Releases](https://github.com/r3dg0d/geolocate/releases) page for pre-
 
 ```bash
 # Geolocate an IP address
-geolocate 8.8.8.8
+geolocate-rs 8.8.8.8
 
 # Geolocate a domain name
-geolocate github.com
+geolocate-rs github.com
 
 # Geolocate a full URL
-geolocate https://www.google.com
+geolocate-rs https://www.google.com
 ```
 
 ### Examples
 
 #### Geolocate Google's DNS
 ```bash
-$ geolocate 8.8.8.8
+$ geolocate-rs 8.8.8.8
 Target: 8.8.8.8
 IP: 8.8.8.8
 Location: Ashburn, Virginia, United States
@@ -87,7 +87,7 @@ Google Maps URL: https://maps.google.com/maps?q=39.03,-77.5
 
 #### Geolocate a Domain
 ```bash
-$ geolocate github.com
+$ geolocate-rs github.com
 Target: github.com
 IP: 140.82.116.4
 Location: San Francisco, California, United States
@@ -97,7 +97,7 @@ Google Maps URL: https://maps.google.com/maps?q=37.7823,-122.391
 
 #### Geolocate a URL
 ```bash
-$ geolocate https://www.reddit.com
+$ geolocate-rs https://www.reddit.com
 Target: https://www.reddit.com
 IP: 151.101.1.140
 Location: San Francisco, California, United States

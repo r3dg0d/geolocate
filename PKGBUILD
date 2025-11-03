@@ -1,5 +1,5 @@
 # Maintainer: r3dg0d <r3dg0d@users.noreply.github.com>
-pkgname=geolocate
+pkgname=geolocate-rs
 pkgver=0.1.0
 pkgrel=1
 pkgdesc="A simple, fast command-line tool for geolocating IP addresses and domain names"
@@ -32,7 +32,7 @@ check() {
 
 package() {
     cd "$srcdir/$pkgname"
-    install -Dm 755 "target/release/$pkgname" "$pkgdir/usr/bin/$pkgname"
+    install -Dm 755 "target/release/geolocate" "$pkgdir/usr/bin/geolocate-rs"
     install -Dm 644 README.md "$pkgdir/usr/share/doc/$pkgname/README.md"
     install -Dm 644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
 }
